@@ -61,9 +61,6 @@ function NavBar() {
             <Route path='/Career' element = {<Work/>}></Route>
             <Route path='/Contact' element = {<Contact/>}></Route>
             <Route path='/faq' element = {<Faq/>}></Route>
-
-
-
         </Routes>
     </div>
     </>

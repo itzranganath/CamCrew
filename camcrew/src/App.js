@@ -2,7 +2,7 @@ import { HashRouter } from "react-router-dom";
 import NavBar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import { HelmetProvider } from 'react-helmet-async';
-import GoToTopButton from "./Components/Body/GoToTopButton";
+// import GoToTopButton from "./Components/Body/GoToTopButton";
 import WhatsAppButton from "./Components/Body/WhatsAppButton";
 import "./App.css";
 

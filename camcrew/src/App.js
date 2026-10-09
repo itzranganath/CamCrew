@@ -26,7 +26,7 @@ function App() {
         <Footer/>
       </div>
     </HashRouter>
-    <GoToTopButton/> 
+    {/* <GoToTopButton/>  */}
     <WhatsAppButton/>
     </HelmetProvider>
     </>

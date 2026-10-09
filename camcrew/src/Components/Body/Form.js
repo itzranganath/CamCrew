@@ -25,21 +25,35 @@ function Forms() {
     e.preventDefault();
 
     // 1. Convert state values into FormData so Formboost can read them
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('mobile', mobile);
-    formData.append('subject', subject);
-    formData.append('budget', budget);
-    formData.append('message', message);
-    formData.append('_replyto', email);
+    // const formData = new FormData();
+    // formData.append('name', name);
+    // formData.append('email', email);
+    // formData.append('mobile', mobile);
+    // formData.append('subject', subject);
+    // formData.append('budget', budget);
+    // formData.append('message', message);
+    // formData.append('_replyto', email);
+
+    const data = {
+        name,
+        email,
+        mobile,
+        subject,
+        budget,
+        message,
+        _replyto: email,
+    };
 
     try {
         const response = await fetch(
             'https://formboost.app/f/9icdylii',
             {
                 method: 'POST',
-                body: formData,
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                // body: formData,
+                body: JSON.stringify(data),
             }
         );
 
